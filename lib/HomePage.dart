@@ -45,9 +45,21 @@ class _HomePageState extends State<HomePage> {
         body: Column(
       children: [
         Expanded(
-          child: Container(
-            color: Colors.blue,
-            child: Center(child: MyBird()),
+          flex: 2,
+          child: GestureDetector(
+            onTap: () {
+              if (gameHasStarted) {
+                jump();
+              } else {
+                startGame();
+              }
+            },
+            child: AnimatedContainer(
+              alignment: Alignment(0, birdYaxis),
+              color: Colors.blue,
+              duration: Duration(microseconds: 0),
+              child: MyBird(),
+            ),
           ),
         ),
         Expanded(
