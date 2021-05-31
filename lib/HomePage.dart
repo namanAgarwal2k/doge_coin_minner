@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:doge_coin_minner/bird.dart';
 import 'package:flutter/material.dart';
 
