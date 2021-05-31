@@ -62,6 +62,10 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
         ),
+        Container(
+          height: 15,
+          color: Colors.green,
+        ),
         Expanded(
             child: Container(
           color: Colors.brown,
