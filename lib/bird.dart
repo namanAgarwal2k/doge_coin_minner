@@ -5,8 +5,8 @@ class MyBird extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       child: Image.asset('lib/images/dog.png'),
-      height: 120,
-      width: 120,
+      height: 130,
+      width: 80,
     );
   }
 }
